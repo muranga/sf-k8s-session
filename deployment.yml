@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: yeasy/simple-web
+        image: nginx
         ports:
         - containerPort: 80
