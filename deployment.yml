@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8-session
+  labels:
+    app: k8-session
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: k8-session
+  template:
+    metadata:
+      labels:
+        app: k8-session
+    spec:
+      containers:
+      - name: hello-world
+        image: yeasy/simple-web
+        ports:
+        - containerPort: 80
