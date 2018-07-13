@@ -29,3 +29,7 @@
 * Change the number of pods running
 
         kubectl scale deployment k8-session --replicas=1
+
+* Shutdown minikube when you are done
+
+        minikube stop
